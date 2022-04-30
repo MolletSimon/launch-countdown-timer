@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'bg-stars': "url('/images/hero-pattern.svg')",
+        'pattern-hills': "url('/images/pattern-hills.svg')",
       },
       animation: {
         flip: 'flip 1s cubic-bezier(0, 0, 0.2, 1) infinite',
