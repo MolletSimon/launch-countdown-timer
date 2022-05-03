@@ -53,31 +53,33 @@ const Home: NextPage = () => {
   })
 
   return (
-    <div
-      className="flex min-h-screen flex-col items-center justify-center
-     bg-gradient-to-b from-[#18161f] to-[#231b3c]"
-    >
-      <Head>
-        <title>Launch Countdown</title>
-        <link
-          rel="shortcut icon"
-          href="./images/favicon-32x32.png"
-          type="image/x-icon"
-        />
-      </Head>
-
+    <div className="absolute inset-0">
       <div
-        className="flex min-h-screen min-w-full flex-col
-       items-center justify-between bg-[url('/images/bg-stars.svg')]"
+        className="min-h-screen min-w-full bg-gradient-to-b from-[#18161f] to-[#231b3c] md:flex md:min-h-screen
+     md:flex-col md:items-center md:justify-center"
       >
-        <Header></Header>
-        <Countdown
-          hour={timeLeft.hours}
-          minutes={timeLeft.minutes}
-          seconds={timeLeft.seconds}
-          days={timeLeft.days}
-        ></Countdown>
-        <Footer></Footer>
+        <Head>
+          <title>Launch Countdown</title>
+          <link
+            rel="shortcut icon"
+            href="./images/favicon-32x32.png"
+            type="image/x-icon"
+          />
+        </Head>
+
+        <div
+          className="flex min-h-screen min-w-full flex-col
+       items-center justify-between bg-[url('/images/bg-stars.svg')]"
+        >
+          <Header></Header>
+          <Countdown
+            hour={timeLeft.hours}
+            minutes={timeLeft.minutes}
+            seconds={timeLeft.seconds}
+            days={timeLeft.days}
+          ></Countdown>
+          <Footer></Footer>
+        </div>
       </div>
     </div>
   )
