@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      letterSpacing: {
+        widest: '0.5em',
+      },
       backgroundImage: {
         'bg-stars': "url('/images/hero-pattern.svg')",
         'pattern-hills': "url('/images/pattern-hills.svg')",
